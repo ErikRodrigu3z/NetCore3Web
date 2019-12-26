@@ -10,7 +10,7 @@ namespace NetCore3.Web.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
-        {
+        { 
         }
     }
 }
