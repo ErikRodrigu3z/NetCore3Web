@@ -12,6 +12,21 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetCore3.Common\NetCore3.Common.csproj" />
+    <ProjectReference Include="..\NetCore3.Models\NetCore3.Models.csproj" />
+    <ProjectReference Include="..\NetCore3.Persistence\NetCore3.Persistence.csproj" />
+    <ProjectReference Include="..\NetCore3.Resources\NetCore3.Resources.csproj" />
   </ItemGroup>
 
 </Project>

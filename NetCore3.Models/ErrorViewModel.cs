@@ -1,6 +1,8 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace NetCore3.Web.Models
+namespace NetCore3.Models
 {
     public class ErrorViewModel
     {
