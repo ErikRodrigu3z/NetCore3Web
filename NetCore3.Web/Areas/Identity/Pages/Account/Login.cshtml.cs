@@ -31,7 +31,7 @@ namespace NetCore3.Web.Areas.Identity.Pages.Account
         }
 
         [BindProperty]
-        public InputModel Input { get; set; }
+        public NetCore3.Models.Account.LoginModel Input { get; set; }
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
@@ -40,19 +40,19 @@ namespace NetCore3.Web.Areas.Identity.Pages.Account
         [TempData]
         public string ErrorMessage { get; set; }
 
-        public class InputModel
-        {
-            [Required]
-            [EmailAddress]
-            public string Email { get; set; }
+        //public class InputModel
+        //{
+        //    [Required]
+        //    [EmailAddress]
+        //    public string Email { get; set; }
 
-            [Required]
-            [DataType(DataType.Password)]
-            public string Password { get; set; }
+        //    [Required]
+        //    [DataType(DataType.Password)]
+        //    public string Password { get; set; }
 
-            [Display(Name = "Remember me?")]
-            public bool RememberMe { get; set; }
-        }
+        //    [Display(Name = "Remember me?")]
+        //    public bool RememberMe { get; set; }
+        //}
 
         public async Task OnGetAsync(string returnUrl = null)
         {
