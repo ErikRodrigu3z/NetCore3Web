@@ -65,6 +65,9 @@ namespace NetCore3.Web
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+            //app.UseMvc();
+
         }
     }
 }
